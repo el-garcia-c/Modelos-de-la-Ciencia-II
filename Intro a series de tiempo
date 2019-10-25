@@ -1,0 +1,26 @@
+#data usada en clase
+View(Nile)
+print(Nile)
+length(Nile)
+head(Nile,10)
+tail(Nile,12)
+min(Nile)
+max(Nile)
+median(Nile)
+mean(Nile)
+summary(Nile)
+plot(Nile,type="b",xlab="Year",ylab=expression("Volumen(1e9 m^{3})"), main="Volumen anual del rio Nilo en Asuan,1871-1970")
+
+mi_data <- head(Nile,n=50)
+plot(mi_data,type="b",xlab="Year",ylab=expression("Volumen(1e9 m^{3})"), main="Volumen anual del rio Nilo en Asuan,1871-1920")
+
+------------------------
+#tarea
+  
+data <- read.csv("https://raw.githubusercontent.com/VictorGuevaraP/MachineLearning/master/publicidad.csv",header = TRUE,sep = ";")
+print(data)
+head(data,10)
+tail(data,10)
+mean(data)
+summary(data)
+plot(data$Ventas,data$Television,type="p",xlab = "Ventas",ylab = "Television")
